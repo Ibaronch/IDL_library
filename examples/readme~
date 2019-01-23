@@ -1,7 +1,0 @@
-examples of the results that can be obtained using:
-
-example1.jpeg: density_map5.pro + smearer.pro
-
-example2.jpeg: plotxyz.pro
-
-example3.jpeg: double_gauss_fit.pro
