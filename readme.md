@@ -1,5 +1,6 @@
 Useful Idl functions
-Ivano Baronchelli 2018
+
+Ivano Baronchelli 2019
 
 ; LIST:
 ; cccpy.pro
