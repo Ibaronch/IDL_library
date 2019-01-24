@@ -1,6 +1,5 @@
 # IDL_library
-library of IDL functions
-Useful Idl functions
+library of useful Idl functions
 Ivano Baronchelli 2018
 
 LIST:     
