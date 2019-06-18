@@ -1,6 +1,9 @@
 
 FUNCTION smearer, xv=xv, yv=yv, zv=zv, xsigma=xsigma, ysigma=ysigma, zsigma=zsigma, NCYCLES=NCYCLES, XRAN=XRAN, YRAN=YRAN, ZRAN=ZRAN
 
+; It creates a set of x, y, z elements randomly distributed (gaussian) 
+; around an input list of x, y, z values.
+;
 ; Input
 ; x = input x vector
 ; y = input y vector (optional)
@@ -32,9 +35,9 @@ NCYCLES=long(NCYCLES)
 ; Along x
 smooth_x_sigma=xsigma
 ; Along y
-smooth_y_sigma=ysigma
+if keyword_set(yv) then smooth_y_sigma=ysigma
 ; Along z
-smooth_z_sigma=zsigma
+if keyword_set(zv) then smooth_z_sigma=zsigma
 
 RR=0L
 WHILE RR lt NCYCLES do begin
@@ -44,11 +47,11 @@ WHILE RR lt NCYCLES do begin
  NN=0L
  while NN lt n_elements(xv) do begin
   ran1[NN]=smooth_x_sigma*randomu(seed,/normal) ; along x
-  ran2[NN]=smooth_y_sigma*randomu(seed,/normal) ; along y
-  ran3[NN]=smooth_z_sigma*randomu(seed,/normal) ; along z
+  if keyword_set(yv) then ran2[NN]=smooth_y_sigma*randomu(seed,/normal) ; along y
+  if keyword_set(zv) then ran3[NN]=smooth_z_sigma*randomu(seed,/normal) ; along z
   XRAN[RR*n_elements(xv)+NN]=xv[NN]+ran1[NN]
-  YRAN[RR*n_elements(xv)+NN]=yv[NN]+ran2[NN]
-  ZRAN[RR*n_elements(xv)+NN]=zv[NN]+ran3[NN]
+  if keyword_set(yv) then YRAN[RR*n_elements(xv)+NN]=yv[NN]+ran2[NN]
+  if keyword_set(zv) then ZRAN[RR*n_elements(xv)+NN]=zv[NN]+ran3[NN]
   NN=NN+1
  endwhile
 RR=RR+1
