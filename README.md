@@ -5,7 +5,7 @@ Ivano Baronchelli 2018
 LIST:     
 antiblooming2.pro     
 cccpy.pro     
-density_map5.pro     
+density_map6.pro     
 double_gauss_fit.pro     
 plotxyz.pro     
 smearer.pro     
@@ -29,7 +29,7 @@ tmp1.txt.
 At the end of the process, all the temporary files are deleted.
 
 
-density_map5.pro    
+density_map6.pro    
 overplots (output file) a color density map, given an input list of x, y, datapoints
 
 double_gauss_fit.pro    
