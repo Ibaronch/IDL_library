@@ -1,4 +1,4 @@
-# IDL_library
+# IDL_library V1.1
 Library of useful Idl functions
 Ivano Baronchelli 2018 - 2021
 
@@ -46,7 +46,17 @@ smearer.pro
 It creates a set of x, y, z elements randomly distributed (gaussian) 
 around an input list of x, y, z values.
 
+----------------------------------------------------
+Differences with respect to previous versions (1.0):
+----------------------------------------------------
+    density_map5.pro is replaced by density_map6.pro.
 
+    some minor bugs of the previous version are now corrected;
+    Z_TYPE "ran" option is added.
+
+ > density_map5.pro is replaced by density_map6.pro.
+   - some minor bugs of the previous version are now corrected;
+   - Z_TYPE "ran" option is added.
 
 
 
