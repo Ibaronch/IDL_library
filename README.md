@@ -1,4 +1,4 @@
-# IDL_library V1.1
+# IDL_library V1.2
 Library of useful Idl functions
 Ivano Baronchelli 2018 - 2021
 
