@@ -1,4 +1,13 @@
 # IDL_library V1.2
+
+
+
+[![DOI](https://zenodo.org/badge/167186512.svg)](https://zenodo.org/badge/latestdoi/167186512)
+
+
+https://zenodo.org/badge/latestdoi/167186512
+
+
 Library of useful Idl functions
 Ivano Baronchelli 2018 - 2021
 
